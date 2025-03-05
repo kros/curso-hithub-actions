@@ -1,0 +1,10 @@
+name: Eventos
+on:
+    pull_request:
+    workflow_dispatch:
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            -name: Step1
+             run: echo "hola mundo, fui lanzado por el evento ${{evento}}"
